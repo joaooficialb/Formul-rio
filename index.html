@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
+ <section>
   <form id="loginForm">
-      <h1>𝐔𝐧𝐢𝐝𝐚𝐝𝐞:</h1>
+      <h1>Unidade:</h1>
       <label>Propietário</label>
       <input type="radio" name="opcao" id="op1">&nbsp;
       <label>Inquilino</label>
@@ -29,15 +29,19 @@
 
       <label for="nome">Celular:</label>
       <input type="text" id="CELULAR" name="CELULAR" required>
-
-      <h1>Ｕｎｉｄａｄｅ:</h1>
+  </formsection>
+    
+    <section>
+      <h1>Em caso de emergência procurar por :</h1>
 
       <label for="nome">NOME:</label>
       <input type="text" id="nome" name="nome" required>
 
       <label for="nome">TELEFONE/CELULAR:</label>
       <input type="text" id="TELEFONE/CELULAR" name="TELEFONE/CELULAR" required>
-
+    </Section>
+    
+    <section>
       <h1>Em caso de locatário informar:</h1>
 
       <label for="nome">NOME:</label>
@@ -45,9 +49,10 @@
 
       <label for "nome">TELEFONE/CELULAR:</label>
       <input type="text" id="TELEFONE" name="TELEFONE" required>
-
-      <h1>Demais moradores da unidade:</h1>
-
+      </Section>
+    
+    <h1>Demais moradores da unidade:</h1>
+    <section class="moradores">
       <label for="nome">NOME:</label>
       <input type="text" id="nome" name="nome" required>
       <input type="text" id="nome" name="nome" required>
@@ -68,9 +73,10 @@
       <input type="text" id="nome" name="nome" required>
       <input type="text" id="nome" name="nome" required>
       <input type="text" id="nome" name="nome" required>
+    </Section>
 
       <h1>Funcionário(s) da Unidade:</h1>
-
+    <section class="funcionario">
       <label for="nome">NOME:</label>
       <input type="text" id="NOME" name="NOME" required>
       <input type="text" id="RG" name="NOME" required>
@@ -83,11 +89,13 @@
       <input type="text" id="TELEFONE" name="TELEFONE" required>
       <input type="text" id="TELEFONE" name="TELEFONE" required>
 
-      <label for="nome">EXPEDIENTE (HORÀRIO):</label>
+      <label for="nome">EXPEDIENTE:</label>
       <input type="text" id="EXPEDIENTE" name="EXPEDIENTE" required>
       <input type="text" id="EXPEDIENTE" name="EXPEDIENTE" required>
-
-      <h2>Veículos da unidade(carro, moto, etc):</h2>
+   </section>
+     
+     <h2>Veículos da unidade(carro, moto, etc):</h2>
+    <section class="carro">
 
       <label for="nome">MARCA:</label>
       <input type="text" id="MARCA" name="MARCA" required>
@@ -98,6 +106,7 @@
       <input type="text" id="MODELO" name="MODELO" required>
       <input type="text" id="MODELO" name="MODELO" required>
       <input type="text" id="MODELO" name="MODELO" required>
+    
 
       <label for="nome">COR:</label>
       <input type="text" id="COR" name="COR" required>
@@ -108,8 +117,10 @@
       <input type="text" id="PLACA" name="PLACA" required>
       <input type="text" id="PLACA" name="PLACA" required>
       <input type="text" id="PLACA" name="PLACA" required>
-
-      <h2>Animais de estimação:</h2>
+      </Section>
+     
+     <h2>Animais de estimação:</h2>
+    <section class="animal">
 
       <label for="nome">NOME:</label>
       <input type="text" id="RG" name="RG" required>
@@ -130,11 +141,14 @@
       <input type="text" id="COR" name="COR" required>
       <input type="text" id="COR" name="COR" required>
       <input type="text" id="COR" name="COR" required>
+    </Section>
 
+    <Section class="Final">
       <h5>AUTORIZO O USO OS DADOS AQUI INFORMADS PARA FINS DE CONTROLE DE  ACESSO DESTE CONDOMÍNIO</h5>
       <input type="radio" name="opcao" id="op1">&nbsp;
 
       <button type="button" onclick="enviarFormulario()">Enviar</button>
+    </Section>
   </form>
 
   <script>
