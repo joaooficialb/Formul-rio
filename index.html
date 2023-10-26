@@ -3,33 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- <section>
+ 
   <form id="loginForm">
+      <section>
       <h1>Unidade:</h1>
+      
       <label>Propietário</label>
       <input type="radio" name="opcao" id="op1">&nbsp;
       <label>Inquilino</label>
       <input type="radio" name="opcao" id="op1">
-
-      <label for="nome">NOME COMPLETO:</label>
+      <div class="unidade">
+      
+      <label for="nome">Nome:</label>
       <input type="text" id="nome" name="nome" required>
+      
       <label for="senha">RG:</label>
       <input type="password" id="rg" name="rg" required>
 
       <label for="nome">CPF:</label>
       <input type="text" id="CPF" name="CPF" required>
-
+      
       <label for="nome">Telefone:</label>
-      <input type="text" id="TELEFONE" name="TELEFONE" required>
+      <input type="tel" id="TELEFONE" name="TELEFONE">
 
       <label for="nome">Email:</label>
       <input type="text" id="EMAIL" name="EMAIL" required>
 
       <label for="nome">Celular:</label>
       <input type="text" id="CELULAR" name="CELULAR" required>
-  </formsection>
+      </div>
+  
+  </form>
+  
     
     <section>
       <h1>Em caso de emergência procurar por :</h1>
@@ -52,28 +60,37 @@
       </Section>
     
     <h1>Demais moradores da unidade:</h1>
+    <label for="nome">NOME:</label>
     <section class="moradores">
-      <label for="nome">NOME:</label>
+      
       <input type="text" id="nome" name="nome" required>
       <input type="text" id="nome" name="nome" required>
       <input type="text" id="nome" name="nome" required>
       <input type="text" id="nome" name="nome" required>
       <input type="text" id="nome" name="nome" required>
-
+      <input type="text" id="nome" name="nome" required>
+      </Section>
+      
       <label for="nome">RG:</label>
+      <div>
       <input type="text" id="RG" name="RG" required>
       <input type="text" id="nome" name="RG" required>
       <input type="text" id="nome" name="RG" required>
       <input type="text" id="nome" name="RG" required>
       <input type="text" id="nome" name="RG" required>
-
+      <input type="text" id="nome" name="RG" required>
+      </div>
+      
       <label for="nome">GRAU DE PARENTESCO:</label>
+      <div>
       <input type="text" id="nome" name="nome" required>
       <input type="text" id="nome" name="nome" required>
       <input type="text" id="nome" name="nome" required>
       <input type="text" id="nome" name="nome" required>
       <input type="text" id="nome" name="nome" required>
-    </Section>
+      <input type="text" id="nome" name="nome" required>
+      </div>
+    
 
       <h1>Funcionário(s) da Unidade:</h1>
     <section class="funcionario">
